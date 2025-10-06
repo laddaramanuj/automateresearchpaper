@@ -50,7 +50,7 @@ def download_all_pdfs(papers: List[Dict]):
     print(f"Starting download of {len(papers)} PDFs...")
 
     for i, paper in enumerate(papers):
-        filename = f"{paper['code'].replace('-', '_')}.pdf"
+        filename = f"ICLR_{paper['code'].replace('-', '_')}.pdf"
         success = download_pdf(paper['pdf_url'], filename)
 
         if success:
