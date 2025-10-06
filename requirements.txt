@@ -1,0 +1,4 @@
+requests
+PyMuPDF
+google-genai
+browser-use
